@@ -20,6 +20,6 @@ resource "aws_transfer_access" "sftp_server" {
 
   role           = aws_iam_role.aws_transfer_role.arn
   server_id      = aws_transfer_server.sftp_server.id
-  home_directory = var.premade_s3_bucket == true ? "/${module.sftp_storage_bucket.s3_bucket_id}" : "/${var.s3_bucket_name}"
+  home_directory = var.premade_s3_bucket == true ? "/${module.sftp_storage_bucket[0].s3_bucket_id}" : "/${var.s3_bucket_name}"
   external_id    = each.value
 }
