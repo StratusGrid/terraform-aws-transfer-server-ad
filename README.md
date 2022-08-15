@@ -147,7 +147,7 @@ This file contains the plugin data for TFLint to run.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_custom_dns_hostname"></a> [custom\_dns\_hostname](#input\_custom\_dns\_hostname) | Boolean to enable Custom Hostname integration with R53 | `bool` | n/a | yes |
+| <a name="input_custom_dns_hostname"></a> [custom\_dns\_hostname](#input\_custom\_dns\_hostname) | FQDN for custom DNS for SFTP Server | `string` | n/a | yes |
 | <a name="input_directory_id"></a> [directory\_id](#input\_directory\_id) | AWS Managed AD Directory ID or AWS Directory Connector ID | `string` | n/a | yes |
 | <a name="input_input_tags"></a> [input\_tags](#input\_input\_tags) | Map of tags to apply to resources | `map(string)` | <pre>{<br>  "Developer": "StratusGrid",<br>  "Provisioner": "Terraform"<br>}</pre> | no |
 | <a name="input_name"></a> [name](#input\_name) | name to prepend to all resource names within module | `string` | n/a | yes |

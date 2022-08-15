@@ -35,8 +35,8 @@ variable "transfer_access_sids" {
 }
 
 variable "custom_dns_hostname" {
-  description = "Boolean to enable Custom Hostname integration with R53"
-  type        = bool
+  description = "FQDN for custom DNS for SFTP Server"
+  type        = string
 }
 
 variable "r53_hosted_zone_id" {
