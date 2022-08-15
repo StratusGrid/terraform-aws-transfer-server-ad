@@ -136,6 +136,7 @@ This file contains the plugin data for TFLint to run.
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.1 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.9 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.1.1 |
 
 ## Resources
 
@@ -143,8 +144,9 @@ This file contains the plugin data for TFLint to run.
 |------|------|
 | [aws_iam_role.aws_transfer_role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
 | [aws_iam_role_policy.aws_transfer_role_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy) | resource |
-| [aws_transfer_access.sftp_server](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/transfer_access) | resource |
-| [aws_transfer_server.sftp_server](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/transfer_server) | resource |
+| [aws_transfer_access.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/transfer_access) | resource |
+| [aws_transfer_server.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/transfer_server) | resource |
+| [null_resource.aws_transfer_server_custom_hostname](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 
 ## Inputs
 
