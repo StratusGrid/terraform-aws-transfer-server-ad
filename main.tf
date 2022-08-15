@@ -9,7 +9,7 @@ resource "aws_transfer_server" "sftp_server" {
 
   /* tags = local.tags */
 
-  tags_all = merge(var.input_tags, {
+  tags_all = merge(local.tags, {
     "aws:transfer:route53HostedZoneId" = "/hostedzone/${var.r53_hosted_zone_id}"
     "aws:transfer:customHostname"      = var.custom_dns_hostname
   })
