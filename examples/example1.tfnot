@@ -1,7 +1,10 @@
-module "template_terraform_module_starter" {
-  source  = "StratusGrid/template-terraform-module-starter/aws"
-  version = "1.0.0"
-  # source   = "github.com/StratusGrid/terraform-aws-template-terraform-module-starter"
-  name       = "${var.name}-template-terraform-module-starter${local.name_suffix}"
-  input_tags = merge(local.common_tags, {})
+module "test" {
+    source = "StratusGrid/transfer-server-ad"
+    version = #Relevant Version here
+
+    directory_id = "AWSDirectoryID"
+    transfer_access_sids = ["S-1-5-21-1180699209-877415012-3182924384-1004","S-1-5-21-1180699209-877417590-3182924384-1004"]
+    name = "test11"
+    r53_hosted_zone_id = "Z00000000000A0BCDEFGH"
+    custom_dns_hostname = "sftp.example.com"
 }
