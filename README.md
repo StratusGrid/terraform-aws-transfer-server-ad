@@ -158,7 +158,9 @@ This file contains the plugin data for TFLint to run.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_sftp_server_cname"></a> [sftp\_server\_cname](#output\_sftp\_server\_cname) | Add this DNS hostname as a CNAME to your var.custom\_dns\_hostname input |
 
 ---
 
