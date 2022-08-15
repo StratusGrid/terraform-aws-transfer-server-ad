@@ -2,12 +2,12 @@ version: ""
 
 formatter: markdown table
 
-name: template-terraform-module-starter
+name: terraform-aws-transfer-server-ad
 
 content: |-
-  # template-terraform-module-starter
+  # terraform-aws-transfer-server-ad
 
-  GitHub: [StratusGrid/template-terraform-module-starter](https://github.com/StratusGrid/template-terraform-module-starter)
+  GitHub: [StratusGrid/terraform-aws-transfer-server-ad](https://github.com/StratusGrid/terraform-aws-transfer-server-ad)
 
   This Repo is meant to act as a template which can be used
   when creating new modules.
