@@ -16,7 +16,7 @@ resource "aws_transfer_server" "sftp_server" {
 }
 
 resource "aws_transfer_access" "sftp_server" {
-  for_each = var.transfer_access_sids
+  for_each = toset(var.transfer_access_sids)
 
   role           = aws_iam_role.aws_transfer_role.arn
   server_id      = aws_transfer_server.sftp_server.id
