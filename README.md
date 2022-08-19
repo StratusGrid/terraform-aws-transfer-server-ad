@@ -101,6 +101,7 @@ module "sftp_server" {
 
 | Name | Description |
 |------|-------------|
+| <a name="output_s3_bucket_name"></a> [s3\_bucket\_name](#output\_s3\_bucket\_name) | S3 Bucket Name used for Transfer Server Backend |
 | <a name="output_sftp_server_cname"></a> [sftp\_server\_cname](#output\_sftp\_server\_cname) | Add this DNS hostname as a CNAME to your var.custom\_dns\_hostname input |
 
 ---
