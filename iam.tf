@@ -31,7 +31,7 @@ data "aws_iam_policy_document" "aws_transfer_policy" {
     actions = [
       "s3:ListBucket"
     ]
-    resources = [module.sftp_storage_bucket[0].s3_bucket_arn]
+    resources = local.s3_bucket_list
   }
 
   statement {
@@ -45,7 +45,7 @@ data "aws_iam_policy_document" "aws_transfer_policy" {
     ]
     #tfsec:ignore:aws-iam-no-policy-wildcards
     resources = [
-      "${module.sftp_storage_bucket[0].s3_bucket_arn}/*"
+      local.s3_bucket_home_directory_access
     ]
   }
 }
