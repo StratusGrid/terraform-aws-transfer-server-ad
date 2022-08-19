@@ -24,7 +24,13 @@ content: |-
   ## Example - Custom DNS
 
   ```hcl
-  {{ include "examples/example1.tfnot" }}
+  {{ include "examples/example2.tfnot" }}
+  ```
+
+  ## Example - Custom S3 Bucket
+
+  ```hcl
+  {{ include "examples/example3.tfnot" }}
   ```
 
   ## Documentation

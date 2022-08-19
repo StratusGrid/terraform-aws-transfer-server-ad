@@ -1,5 +1,5 @@
-module "test" {
-    source = "StratusGrid/transfer-server-ad"
+module "sftp_server" {
+    source  = "StratusGrid/transfer-server-ad"
     version = #Relevant Version here
 
     directory_id = "AWSDirectoryID"

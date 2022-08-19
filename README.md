@@ -12,8 +12,8 @@ This is a Terraform module to interact with the AWS Transfer Family SFTP service
 ## Example - No Custom DNS
 
 ```hcl
-module "test" {
-    source = "StratusGrid/transfer-server-ad"
+module "sftp_server" {
+    source  = "StratusGrid/transfer-server-ad"
     version = #Relevant Version here
 
     directory_id = "AWSDirectoryID"
@@ -27,15 +27,32 @@ module "test" {
 ## Example - Custom DNS
 
 ```hcl
-module "test" {
-    source = "StratusGrid/transfer-server-ad"
+module "sftp_server" {
+    source  = "StratusGrid/transfer-server-ad"
     version = #Relevant Version here
 
-    directory_id = "AWSDirectoryID"
+    directory_id         = "AWSDirectoryID"
     transfer_access_sids = ["S-1-5-21-1180699209-877415012-3182924384-1004","S-1-5-21-1180699209-877417590-3182924384-1004"]
-    name = "test11"
-    r53_hosted_zone_id = "Z00000000000A0BCDEFGH"
-    custom_dns_hostname = "sftp.example.com"
+    name                 = "test11" #Prefixes resources created by the module
+    enable_custom_dns    = true
+    r53_hosted_zone_id   = "Z00000000000A0BCDEFGH"
+    custom_dns_hostname  = "sftp.example.com"
+}
+```
+
+## Example - Custom S3 Bucket
+
+```hcl
+module "sftp_server" {
+    source  = "StratusGrid/transfer-server-ad"
+    version = #Relevant Version here
+
+    directory_id         = "AWSDirectoryID"
+    transfer_access_sids = ["S-1-5-21-1180699209-877415012-3182924384-1004","S-1-5-21-1180699209-877417590-3182924384-1004"]
+    name                 = "test11" #Prefixes resources created by the module
+    
+    premade_s3_bucket = false
+    s3_bucket_name    = "bucketname"
 }
 ```
 
