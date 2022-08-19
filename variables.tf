@@ -34,12 +34,19 @@ variable "transfer_access_sids" {
   type        = list(string)
 }
 
+variable "enable_custom_dns" {
+  description = "Boolean to enable custom DNS for Transfer Family"
+  type        = bool
+}
+
 variable "custom_dns_hostname" {
   description = "FQDN for custom DNS for SFTP Server"
   type        = string
+  default     = ""
 }
 
 variable "r53_hosted_zone_id" {
   description = "R53 Hosted Zone ID for Custom Hostname"
   type        = string
+  default     = ""
 }
