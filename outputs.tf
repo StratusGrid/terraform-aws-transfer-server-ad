@@ -4,5 +4,5 @@ output "sftp_server_cname" {
 }
 output "s3_bucket_name" {
   description = "S3 Bucket Name used for Transfer Server Backend"
-  value       = var.premade_s3_bucket ? module.sftp_storage_bucket.s3_bucket_id : var.s3_bucket_name
+  value       = var.premade_s3_bucket ? module.sftp_storage_bucket[0].s3_bucket_id : var.s3_bucket_name
 }
