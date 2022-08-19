@@ -46,7 +46,7 @@ module "sftp_storage_bucket" {
   version = "~> 3.0"
 
   bucket        = "${var.name}-sftp-storage"
-  force_destroy = false
+  force_destroy = var.force_destroy
 
   # Bucket policies
   attach_policy                         = true

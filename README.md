@@ -88,6 +88,7 @@ module "sftp_server" {
 | <a name="input_custom_dns_hostname"></a> [custom\_dns\_hostname](#input\_custom\_dns\_hostname) | FQDN for custom DNS for SFTP Server | `string` | `""` | no |
 | <a name="input_directory_id"></a> [directory\_id](#input\_directory\_id) | AWS Managed AD Directory ID or AWS Directory Connector ID | `string` | n/a | yes |
 | <a name="input_enable_custom_dns"></a> [enable\_custom\_dns](#input\_enable\_custom\_dns) | Boolean to enable custom DNS for Transfer Family | `bool` | n/a | yes |
+| <a name="input_force_destroy"></a> [force\_destroy](#input\_force\_destroy) | Force Destroy Premade S3 Bucket if created | `bool` | `false` | no |
 | <a name="input_input_tags"></a> [input\_tags](#input\_input\_tags) | Map of tags to apply to resources | `map(string)` | <pre>{<br>  "Developer": "StratusGrid",<br>  "Provisioner": "Terraform"<br>}</pre> | no |
 | <a name="input_name"></a> [name](#input\_name) | name to prepend to all resource names within module | `string` | n/a | yes |
 | <a name="input_premade_s3_bucket"></a> [premade\_s3\_bucket](#input\_premade\_s3\_bucket) | Use the pre-made S3 bucket and policies included in the module, or use a custom S3 bucket. | `bool` | `true` | no |

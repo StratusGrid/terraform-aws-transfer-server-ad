@@ -29,6 +29,13 @@ variable "s3_bucket_name" {
   default     = null
 }
 
+variable "force_destroy" {
+  description = "Force Destroy Premade S3 Bucket if created"
+  type        = bool
+  default     = false
+
+}
+
 variable "transfer_access_sids" {
   description = "External SIDs allowed access to the Transfer Server"
   type        = list(string)
