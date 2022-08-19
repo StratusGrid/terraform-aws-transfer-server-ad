@@ -28,7 +28,7 @@ resource "aws_transfer_server" "this" {
   directory_id           = var.directory_id
   domain                 = "S3"
   endpoint_type          = "PUBLIC"
-  security_policy_name   = "TransferSecurityPolicy-2022-03"
+  security_policy_name   = var.security_policy_name
   protocols              = ["SFTP"]
   logging_role           = aws_iam_role.aws_transfer_role.arn
 

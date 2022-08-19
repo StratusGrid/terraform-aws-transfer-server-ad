@@ -94,6 +94,7 @@ module "sftp_server" {
 | <a name="input_premade_s3_bucket"></a> [premade\_s3\_bucket](#input\_premade\_s3\_bucket) | Use the pre-made S3 bucket and policies included in the module, or use a custom S3 bucket. | `bool` | `true` | no |
 | <a name="input_r53_hosted_zone_id"></a> [r53\_hosted\_zone\_id](#input\_r53\_hosted\_zone\_id) | R53 Hosted Zone ID for Custom Hostname | `string` | `""` | no |
 | <a name="input_s3_bucket_name"></a> [s3\_bucket\_name](#input\_s3\_bucket\_name) | Bucket Name if premade\_s3\_bucket is set to FALSE | `string` | `null` | no |
+| <a name="input_security_policy_name"></a> [security\_policy\_name](#input\_security\_policy\_name) | Transfer Family Security Policy Name - https://docs.aws.amazon.com/transfer/latest/userguide/security-policies.html | `string` | `"TransferSecurityPolicy-2022-03"` | no |
 | <a name="input_transfer_access_sids"></a> [transfer\_access\_sids](#input\_transfer\_access\_sids) | External SIDs allowed access to the Transfer Server | `list(string)` | n/a | yes |
 
 ## Outputs
