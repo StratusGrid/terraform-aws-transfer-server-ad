@@ -29,6 +29,9 @@ content: |-
 
   ## Documentation
 
+  ### Notes
+  - Due to Terraform limitations this module does not support removing the custom tagging on the `aws_transfer_server.self` resource. See [here](https://github.com/hashicorp/terraform/issues/23679) for more information.
+
   ---
 
   {{ .Requirements }}

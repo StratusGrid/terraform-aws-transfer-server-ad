@@ -41,6 +41,9 @@ module "test" {
 
 ## Documentation
 
+### Notes
+- Due to Terraform limitations this module does not support removing the custom tagging on the `aws_transfer_server.self` resource. See [here](https://github.com/hashicorp/terraform/issues/23679) for more information.
+
 ---
 
 ## Requirements
@@ -59,7 +62,7 @@ module "test" {
 | [aws_iam_role_policy.aws_transfer_role_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy) | resource |
 | [aws_transfer_access.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/transfer_access) | resource |
 | [aws_transfer_server.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/transfer_server) | resource |
-| [null_resource.aws_transfer_server_custom_hostname](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+| [null_resource.aws_transfer_server_custom_hostname_provision](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 
 ## Inputs
 

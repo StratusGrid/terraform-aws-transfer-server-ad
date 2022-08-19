@@ -1,5 +1,6 @@
 # https://github.com/hashicorp/terraform-provider-aws/issues/18077
-resource "null_resource" "aws_transfer_server_custom_hostname" {
+#Provision
+resource "null_resource" "aws_transfer_server_custom_hostname_provision" {
   count = var.enable_custom_dns == true ? 1 : 0
 
   provisioner "local-exec" {
