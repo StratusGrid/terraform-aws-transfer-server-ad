@@ -16,11 +16,10 @@ module "sftp_server" {
     source  = "StratusGrid/transfer-server-ad"
     version = #Relevant Version here
 
-    directory_id = "AWSDirectoryID"
+    directory_id         = "AWSDirectoryID"
     transfer_access_sids = ["S-1-5-21-1180699209-877415012-3182924384-1004","S-1-5-21-1180699209-877417590-3182924384-1004"]
-    name = "test11"
-    r53_hosted_zone_id = "Z00000000000A0BCDEFGH"
-    custom_dns_hostname = "sftp.example.com"
+    name                 = "test11"
+    enable_custom_dns    = false
 }
 ```
 
