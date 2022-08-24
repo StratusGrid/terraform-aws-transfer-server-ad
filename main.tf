@@ -33,11 +33,6 @@ resource "aws_transfer_server" "this" {
   logging_role           = aws_iam_role.aws_transfer_role.arn
 
   tags = local.tags
-
-  /* tags = merge(local.tags, {
-    "aws:transfer:route53HostedZoneId" = "/hostedzone/${var.r53_hosted_zone_id}"
-    "aws:transfer:customHostname"      = var.custom_dns_hostname
-  }) */
 }
 
 resource "aws_transfer_access" "this" {
