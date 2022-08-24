@@ -1,11 +1,13 @@
 {
   "cSpell.words": [
     "awsume",
+    "bucketname",
     "EIPs",
     "gitleaks",
     "keypair",
     "keypairs",
     "POSIX",
+    "premade",
     "terrascan",
     "tflint",
     "tfnot",

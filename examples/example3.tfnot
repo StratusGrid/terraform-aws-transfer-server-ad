@@ -4,6 +4,8 @@ module "sftp_server" {
 
     directory_id         = "AWSDirectoryID"
     transfer_access_sids = ["S-1-5-21-1180699209-877415012-3182924384-1004","S-1-5-21-1180699209-877417590-3182924384-1004"]
-    name                 = "test11"
-    enable_custom_dns    = false
+    name                 = "test11" #Prefixes resources created by the module
+    
+    premade_s3_bucket = false
+    s3_bucket_name    = "bucketname"
 }

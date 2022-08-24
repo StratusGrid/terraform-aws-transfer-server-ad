@@ -30,6 +30,7 @@ repos:
           #- '--args=--only=terraform_required_version' # This is bugged with the new Terraform provider syntax
           - "--args=--only=terraform_required_providers"
           - "--args=--only=terraform_workspace_remote"
+          - "--args=--only=terraform_standard_module_structure"
       - id: terraform_tfsec
         args:
           - "--args=--exclude-downloaded-modules"
